@@ -3,3 +3,5 @@ clean
 clean compile
 clean
 compile
+clean
+exit
