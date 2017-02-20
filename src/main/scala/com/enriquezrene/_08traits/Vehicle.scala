@@ -3,11 +3,16 @@ package com.enriquezrene._08traits
 /**
   * Created by moe on 2/12/17.
   */
-// Java abstract class
+// Java interface
 trait Vehicle {
 
   // abstract method break
   def break
+
+  // it would have an own default implementation like java interfaces has
+  def sprint(): Unit ={
+    println ("Sprinting...")
+  }
 }
 
 
