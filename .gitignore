@@ -12,7 +12,6 @@ project/boot/
 ### Scala template
 *.class
 *.log
-
 # sbt specific
 .cache
 .history
@@ -24,6 +23,7 @@ src_managed/
 project/boot/
 project/target/
 project/target/*
+project/target/streams/compile/
 project/plugins/project/
 
 # Scala-IDE specific
