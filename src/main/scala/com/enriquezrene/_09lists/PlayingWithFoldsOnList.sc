@@ -23,3 +23,12 @@ fullName.foldRight(" is my full name")(
   (concatenatedString, eachString) => concatenatedString.capitalize + eachString.capitalize
 )
 
+def checkIfItemIsInList[A](list: List[A], item: A) = {
+  // By default I assume that the list has no that value
+  list.foldLeft(false)(
+    (a, b) => a || b == item
+  )
+}
+
+checkIfItemIsInList(fullName, "rene")
+checkIfItemIsInList(fullName, "math")
